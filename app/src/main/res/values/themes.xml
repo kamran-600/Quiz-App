@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.Assignment" parent="Base.Theme.Assignment" />
+
+    <style name="circleShape" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSize">20%</item>
+    </style>
 </resources>

@@ -174,7 +174,6 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
-            android:progress="10"
             app:layout_constraintBottom_toTopOf="@id/progressText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -188,10 +187,24 @@
             android:text="0"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@id/questionNo"
+            app:layout_constraintBottom_toTopOf="@id/image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/progressBar" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressText"
+            app:layout_constraintBottom_toTopOf="@id/questionNo"
+            android:src="@color/main_blue_stroke_color"
+            app:shapeAppearance="@style/circleShape" />
 
 
         <com.google.android.material.textview.MaterialTextView
@@ -204,7 +217,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/progressText" />
+            app:layout_constraintTop_toBottomOf="@id/image" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/quesLL"

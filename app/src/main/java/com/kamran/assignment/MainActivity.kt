@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import coil.load
 import com.kamran.assignment.databinding.ActivityMainBinding
 import com.kamran.assignment.modals.QuestionModal
 import com.kamran.assignment.utils.Dialog
@@ -125,6 +126,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showQuestion(quesNo: Int, questions: List<QuestionModal>) {
+
+        binding.image.load(questions[quesNo - 1].image)
+
         binding.questionNo.text = "${questions[quesNo - 1].questionNo}".plus(".")
         binding.question.text = questions[quesNo - 1].question
         binding.option1.text = questions[quesNo - 1].optionOne

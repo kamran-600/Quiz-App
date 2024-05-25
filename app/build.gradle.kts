@@ -57,4 +57,9 @@ dependencies {
 
     //sweetDialog library
     implementation(libs.library)
+
+    // image loading library
+    implementation(libs.coil)
+
+
 }
